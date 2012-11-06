@@ -7,11 +7,15 @@ function degauss(){
 //	alert('a crazy warp/degauss effect that changes the text!');
 
 	console.log('skewing');
-	$('div').addClass('skewout');
+	$('div').addClass('textfuzz');
+  window.setTimeout(function(){
+    $('div').addClass('skewout');
+  },1000);
+
   window.setTimeout(function(){
     $('div').addClass('norm');
     changeText();
-  },1000);
+  },2000);
 
 	window.setTimeout(function(){
     $('div').removeClass('skewout');
